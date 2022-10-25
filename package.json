@@ -1,0 +1,33 @@
+{
+  "name": "q-todo",
+  "type": "module",
+  "private": "true",
+  "packageManager": "pnpm@7.5.2",
+  "author": "ikexing <ikexing@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest",
+    "build": "unbuild",
+    "lint": "eslint .",
+    "dev": "esno watch src/app",
+    "prepublishOnly": "nr build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "@antfu/ni": "^0.18.2",
+    "@types/node": "^18.11.5",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.26.0",
+    "esno": "^0.16.3",
+    "pnpm": "^7.14.0",
+    "typescript": "^4.8.4",
+    "unbuild": "^0.9.4",
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
+  },
+  "dependencies": {
+    "@koishijs/plugin-adapter-onebot": "^5.2.7",
+    "koishi": "^4.9.6"
+  }
+}
